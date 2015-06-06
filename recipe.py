@@ -1,16 +1,15 @@
-from pprint import pprint
-
 class Recipe:
     """
-    Recipe class for sezemi 2015
+        Recipe class for sezemi 2015
     """
+
     def __init__(self):
         self._recipes = []
 
     @staticmethod
     def test():
         """
-        Task1 print a dish
+            Task1 print a dish
 
         >>> recipe = Recipe()
         >>> recipe.test()
@@ -20,8 +19,8 @@ class Recipe:
 
     def read_file(self, file_path):
         """
-        Recipe from a file. Data are added to existing recipes
-        File format is supposed to one recipe at one line.
+            Recipe from a file. Data are added to existing recipes
+            File format is supposed to one recipe at one line.
 
         >>> recipe = Recipe()
         >>> recipe.read_file("./data/recipe-data.txt")
@@ -40,7 +39,6 @@ class Recipe:
         for recipe in self._recipes:
             print(recipe)
         return ""
-
 
 
 def _test():
