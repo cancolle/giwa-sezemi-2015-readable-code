@@ -4,7 +4,7 @@ I joined readable code event hold by sezemi. Many top engineer in famous IT comp
 
 # Poem
 ## Why do I write this document in English?
-In most of open sources, comitters and contributers are communicated in English. I know my English is bad. Never mind! Code is written in English. We alredy kwnow "technical English". Don't be shy! Practice makes perfect! 
+In most of open sources, comitters and contributers are communicated in English. I know my English is bad. Never mind! Code is written in English. We alredy kwnow "technical English". Don't be shy! Practice makes perfect!
 
 If you are unconfident in your English, ALC and Grammaly is your friend.
 
@@ -17,7 +17,7 @@ Considering the task for this event, I choose PyCharm as an editor becuase PyCha
 * PEP8
 * Zen of Python
 
-Python has an amazing code convention, PEP 8. I believe this is defact standard for Python code convention for OSS. I will follow PEP8 as much as I can. 
+Python has an amazing code convention, PEP 8. I believe this is defact standard for Python code convention for OSS. I will follow PEP8 as much as I can.
 
 ```
 The Zen of Python, by Tim Peters
@@ -87,7 +87,7 @@ This function gets file path as an input. If the name is jsut file, it cause con
 ### Motivation
 Declare input explicity.
 
-## Mmoe2
+## Memo2
 ### Code
 ```
         """
@@ -105,7 +105,7 @@ Declare input explicity.
 ```
 
 
-### Movation
+### Motivation
 doctest is a pretty good exmaple to explan how to use the function.
 
 ## Memo3
@@ -125,4 +125,28 @@ if __name__ == "__main__":
 ### Motivation
 _test function is a private method. Since this is only for test, test code should not expose to be public.
 
-Stable Code. All functino should be tested to imporove reliability.
+Stable Code. All function should be tested to improve reliability.
+
+
+
+# Added by K.Mori
+
+## Good points for these codes
+* reducing the numbers of codes for "Task"
+    * Many codes are difficult for operation and maintenance
+* Define the Class and Function
+    * Easy for reading
+
+## Memo5
+### Code
+Added the code to task4
+```
+        txt_length =sum(1 for line in open(file_path))
+        recipe_id = [x+1 for x in range(txt_length)]
+        for i in range(txt_length):
+            print("{0}:{1}".format(recipe_id[i], self._recipes[i]))
+```
+
+### Motivation
+Want to use list for ID & the name of recipe.
+The name was already existed. So I made the ID's list.
