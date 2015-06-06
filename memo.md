@@ -135,7 +135,30 @@ Stable Code. All function should be tested to improve reliability.
 * Divide the solving and Running
     * Easy for operation and maintenance
 * Define the Class and Function
-    * Easy for reading
+    * Easy to read
+* Writing the sample input and output
+    * Easy to understand
+```python
+    def read_file(self, file_path):
+        """
+            Recipe from a file. Data are added to existing recipes
+            File format is supposed to one recipe at one line.
+
+        >>> recipe = Recipe()
+        >>> recipe.read_file("./data/recipe-data.txt")
+        >>> print(recipe)
+        オムライス
+        親子丼
+        杏仁豆腐
+        ...
+        """
+        with open(file_path) as f:
+            recipes = f.readlines()
+            cleaned_recipes = map(lambda recipe: recipe.strip(), recipes)
+        self._recipes.extend(cleaned_recipes)
+
+```
+
 
 ## Memo5
 ### Code
