@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Check pep8 validation by pep8
+# see below
+# https://www.python.org/dev/peps/pep-0008/
+# https://github.com/jcrocholl/pep8
+
+setup_environment() {
+    # Write exceptions for pep8 validation with CSV format
+    # e.g. E221,E701
+    IGNORE_ERRORS=
+}
+
+main(){
+    setup_environment
+    pep8 -v --statistics --count --show-source --ignore=$IGNORE_ERRORS *.py
+}
+
+main
