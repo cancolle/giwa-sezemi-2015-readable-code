@@ -1,0 +1,7 @@
+#! /bin/bash
+
+main(){
+    python recipe.py -v
+}
+
+main

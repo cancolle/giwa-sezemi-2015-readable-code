@@ -1,0 +1,11 @@
+machine:
+  timezone:
+    Asia/Tokyo
+  python:
+    version: 3.4.2
+
+test:
+  pre:
+    - ./tests/run-lint
+  override:
+    - ./tests/run-test
