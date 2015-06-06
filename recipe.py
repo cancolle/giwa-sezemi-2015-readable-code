@@ -5,7 +5,8 @@ class Recipe:
     def _init__(self):
         pass
 
-    def test(self):
+    @staticmethod
+    def test():
         """
         Task1 print a dish
 
