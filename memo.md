@@ -132,8 +132,8 @@ Stable Code. All function should be tested to improve reliability.
 # Added by K.Mori
 
 ## Good points for these codes
-* reducing the numbers of codes for "Task"
-    * Many codes are difficult for operation and maintenance
+* Divide the solving and Running
+    * Easy for operation and maintenance
 * Define the Class and Function
     * Easy for reading
 
